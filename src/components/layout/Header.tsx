@@ -1,4 +1,6 @@
+
 import React from 'react';
+import { Bell, Languages } from 'lucide-react';
 
 export const Header = () => {
   return (
@@ -25,15 +27,13 @@ export const Header = () => {
       </div>
       
       <div className="self-stretch flex min-w-60 items-center gap-6 my-auto">
-        <button className="self-stretch flex min-h-12 items-center gap-1 justify-center w-12 my-auto hover:bg-white/10 rounded-full transition-colors">
-          <div className="self-stretch flex min-h-[42px] w-[42px] my-auto" />
+        <button className="self-stretch flex items-center justify-center p-2 hover:bg-white/10 rounded-full transition-colors">
+          <Languages size={24} color="white" />
         </button>
         
-        <div className="self-stretch flex flex-col text-[11px] text-white font-bold whitespace-nowrap text-center w-12 my-auto pt-3 pb-[22px] px-2.5">
-          <div className="bg-[#EF3737] w-3.5 h-3.5 px-[5px] rounded-[50%]">
-            3
-          </div>
-        </div>
+        <button className="self-stretch flex items-center justify-center p-2 hover:bg-white/10 rounded-full transition-colors">
+          <Bell size={24} color="white" />
+        </button>
         
         <div className="self-stretch flex items-center gap-3 text-sm text-white font-medium text-center my-auto">
           <img
